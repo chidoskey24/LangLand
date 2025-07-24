@@ -15,14 +15,29 @@ body {
 }
 
 header {
+  position: relative;
   background: #4a90e2;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers the h1 */
   text-align: center;
 }
 
 header h1 {
   font-size: 1.8rem;
+  margin: 0; /* override any default */
+}
+
+/* logo anchored to the left inside the header */
+.logo {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px; /* slightly smaller */
+  height: auto;
 }
 
 main {
