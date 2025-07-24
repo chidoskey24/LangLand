@@ -28,7 +28,7 @@ header {
 header h1 {
   font-size: 1.8rem;
   margin: 0; /* override any default */
-  margin-left: 120px;
+  margin-left: 100px;
 }
 
 /* logo anchored to the left inside the header */
