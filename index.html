@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LangLand - English & Turkish Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>LangLand Translator</h1>
+  </header>
+
+  <main>
+    <section class="translator">
+      <div class="input-area">
+        <label for="sourceText">Enter text</label>
+        <textarea id="sourceText" placeholder="Type text here..." rows="6"></textarea>
+      </div>
+
+      <div class="controls">
+        <select id="sourceLang">
+          <option value="en" selected>English</option>
+          <option value="tr">Turkish</option>
+        </select>
+
+        <button id="swapBtn" title="Swap languages">⇆</button>
+
+        <select id="targetLang">
+          <option value="tr">Turkish</option>
+          <option value="en" selected>English</option>
+        </select>
+
+        <button id="translateBtn">Translate</button>
+      </div>
+
+      <div class="output-area">
+        <label for="resultText">Translation</label>
+        <textarea id="resultText" readonly rows="6"></textarea>
+        <button id="copyBtn" class="copy-btn" title="Copy translation">Copy</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Powered by <span id="serviceLink"><a href="https://libretranslate.com/" target="_blank" rel="noopener noreferrer">LibreTranslate</a></span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
